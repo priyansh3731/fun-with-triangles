@@ -1,20 +1,20 @@
-const quizform = document.querySelector(".quiz-form");
-const submitAnserBtn = document.querySelector("#submit-answer-btn");
-const outputE1 = document.querySelector("#output");
+const quizForm = document.querySelector(".quiz-form");
+const submitAnswerButton = document.querySelector("#submit-answer-button");
+const outputEl = document.querySelector("#output");
 
-const correctAnswer = ["90°","right angled"];
+const correctAnswers = ["90°", "Right Angled", "Yes", "Yes", "90°"];
 
-function calculateScore(){
-    let score = 0;
-    let index = 0;
-    const formResults = new FormData(quizform);
-    for(let value of formResults.values()){
-        if(value === correctAnswer[index]){
-            score++;
-        }
-        index++;
+function calculateScore() {
+  let score = 0;
+  let index = 0;
+  const formResults = new FormData(quizForm);
+  for (let value of formResults.values()) {
+    if (value === correctAnswers[index]) {
+      score = score + 1;
     }
-    outputE1.innerText = "your score is "+score;
+    index = index + 1;
+  }
+  outputEl.innerText = "Your Score is " + score;
 }
 
-submitAnserBtn.addEventListener("click", calculateScore)
+submitAnswerButton.addEventListener("click", calculateScore);

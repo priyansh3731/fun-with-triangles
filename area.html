@@ -4,26 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>area</title>
-    <link href="style.css" rel="stylesheet">
+    <title>Calculate Area</title>
+    <link rel="stylesheet" href="area.css">
 </head>
 <body>
-    <a href="index.html">is Triangle?</a>
-    <a href="quiz.html">quiz</a>
-    <a href="isTriangle.html">calculate hypotenuse</a>
-    <a href="area.html">area of Triangle</a>
-
-
-    <h1>area of a triangle</h1>
-
-    <label for="base">base :</label>
-    <input type="number" class="side-input" />
-
-    <label for="height">height :</label>
-    <input type="number" class="side-input" />
-
-    <button id="area-btn">area check</button>
-    <h2 id="output"></h2>
+    <header class="angles">
+        <h1 class="heading">Check Area Of Triangle</h1>
+        <a href="istriangle.html" class ="link">AnglesOfTriangle</a>
+        <a href="quiz.html" class ="link">TakeQuiz</a>
+        <a href="hypotenuese.html" class ="link">CalculateHypotenues</a>
+        <a href="index.html" class ="link">Home</a>
+        
+    </header>
+    <h2 class="heading2">Area Of triangle = 1/2(Base*Height)</h2>
+    <label class="label">Base</label>
+    <input class="sides" type="number">
+    <label class="label">Height</label>
+    <input class="sides" type="number" >
+    <button id="area-of-triangle">Area Of Triangle</button>
+    <div id="output"></div>    
+    <script src="area.js"></script>
 </body>
-<script src="area.js"></script>
 </html>

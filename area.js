@@ -1,12 +1,25 @@
-const sideInput = document.querySelectorAll(".side-input");
-const areaBtn = document.querySelector("#area-btn");
-const outputE1 = document.querySelector("#output");
+const sides = document.querySelectorAll(".sides");
+const button = document.querySelector("#area-of-triangle");
+const outputEl = document.querySelector("#output");
 
-areaBtn.addEventListener("click" , areaCheck);
-
-
-function areaCheck(){
-    console.log("here");
-    const area = (Number(sideInput[0].value) * Number(sideInput[1].value))/2;
-    outputE1.innerText = "the area is : "+area;
+function applyFormula(x, y) {
+  const areaOfTriangle = x * y;
+  return areaOfTriangle;
 }
+
+function calculateAreaOfTriangle() {
+  const areaOfTriangle = applyFormula(
+    Number(sides[0].value),
+    Number(sides[1].value)
+  );
+  const finalArea = (areaOfTriangle / 2).toFixed(2);
+  if (sides[0].value === "" || sides[1].value === "") {
+    outputEl.innerText = "Please fill the required details!";
+  } else if (sides[0].value > 0 || sides[1].value > 0) {
+    outputEl.innerText = "The Area Of Triangle Is : " + finalArea;
+  } else {
+    outputEl.innerText = "The value can't be negative or zero!";
+  }
+}
+
+button.addEventListener("click", calculateAreaOfTriangle);

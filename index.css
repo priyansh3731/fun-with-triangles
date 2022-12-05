@@ -1,0 +1,40 @@
+body{
+    text-align: center;
+    background-image: url(https://images.cdn3.stockunlimited.net/preview1300/blue-triangles-background_1845085.jpg);
+  }
+  
+  .box{
+    color: white;
+    padding: 1rem;
+       display: inline-block;
+       width: 85px;
+       height: 85px;
+       margin-left:35px;
+       text-align: center;
+       vertical-align: middle;
+       margin-top: 10px;
+       margin-right: 10px;
+       border: 1px solid black;
+       text-decoration: none;
+       padding-top: 1.8rem;
+       font-weight:600;
+      font-size:18px;
+       
+   }
+   .box:hover{
+     box-shadow: 5px 10px #888888;
+   }
+   .wrapper{
+     width:70vw;
+     height:40vh;
+   
+     margin-top:150px;
+     margin-left:140px;
+       
+   }
+   .heading{
+    color: white;
+     margin-left:100px;
+     font-size:32px;
+     font-family:cursive;
+   }

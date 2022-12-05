@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculate hypotenuse</title>
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="istriangle.css">
+    <title>Is triangle</title>
 </head>
 <body>
-    <a href="index.html">is Triangle?</a>
-    <a href="quiz.html">quiz</a>
-    <a href="isTriangle.html">calculate hypotenuse</a>
-    <a href="area.html">area of Triangle</a>
+    <header class="angles">
+        <h1 class="heading">Enter three angles 📐 and we'll tell you if it forms a triangle!</h1>
+        <a href="area.html" class ="link">CalculateArea</a>
+        <a href="quiz.html" class ="link">TakeQuiz</a>
+        <a href="hypotenuse.html" class ="link">CalculateHypotenues</a>
+        <a href="index.html" class ="link">Home</a>
+        
+    </header>
 
-
-    <h1>claculate hypotenuse</h1>
-    <label>a =</label>
-    <input type="number" class="side-input" />
-    
-    <label>b =</label>
-    <input type="number" class="side-input" />
-
-    <button id="hypotenuse-btn">calculate hypotenuse</button>
-    <h2 id="output"></h2>
+    <label class="label" for="angle1">Please Enter The First Angle</label>
+    <input type="number" class="input">
+    <label class="label" for="angle2">Please Enter The Second Angle</label>
+    <input type="number" class="input">
+    <label class="label" for="angle3">Please Enter The Third Angle</label>
+    <input type="number" class="input">
+    </div>
+    <button id="is-triangle">Check</button>
+    <div id="output"></div>
+    <script src="istriangle.js"></script>
 </body>
-<script src="isTriangle.js"></script>
 </html>
